@@ -48,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
-				.antMatchers("/", "/dist/css/*.css", "/registration", "/dist/img/*.*", "/dist/img/jobs/*.*",
+				.antMatchers( "/dist/css/*.css", "/registration", "/dist/img/*.*", "/dist/img/jobs/*.*",
 						"/plugins/bootstrap/css/bootstrap.min.css", "/plugins/jquery/jquery.js",
 						"/plugins/bootstrap/js/bootstrap.min.js",
 						"/plugins/font-awesome-4.7.0/css/font-awesome.min.css")
